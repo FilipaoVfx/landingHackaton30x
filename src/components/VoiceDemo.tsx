@@ -6,9 +6,9 @@ import { useStepLoop } from '@/lib/useStepLoop'
 type VoiceState = 'listening' | 'thinking' | 'speaking'
 
 const STATES: { id: VoiceState; label: string; duration: number }[] = [
-  { id: 'listening', label: 'Escuchando…', duration: 3600 },
-  { id: 'thinking', label: 'Pensando…', duration: 2000 },
-  { id: 'speaking', label: 'Respondiendo…', duration: 3600 },
+  { id: 'listening', label: 'Escuchando…', duration: 7200 },
+  { id: 'thinking', label: 'Pensando…', duration: 4000 },
+  { id: 'speaking', label: 'Respondiendo…', duration: 7200 },
 ]
 
 const transcripts: Record<VoiceState, string> = {

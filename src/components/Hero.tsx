@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { ArrowUpRight } from 'lucide-react'
+import { ArrowUpRight, Phone } from 'lucide-react'
 import { LiveConversation } from '@/components/LiveConversation'
 import { easeOutExpo } from '@/components/shared/Reveal'
 import { DEMO_URL } from '@/lib/links'
@@ -61,7 +61,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, ease: easeOutExpo, delay: 0.62 }}
-              className="mt-9"
+              className="mt-9 flex flex-wrap gap-4"
             >
               <a
                 href={DEMO_URL}
@@ -69,7 +69,17 @@ export function Hero() {
                 rel="noreferrer"
                 className="group inline-flex h-13 items-center justify-center gap-2.5 rounded-full bg-guardian px-8 text-[0.95rem] font-semibold text-carbon shadow-cta transition-all duration-300 hover:-translate-y-0.5 hover:bg-guardian-deep active:translate-y-0"
               >
-                Conversar con Secura
+                Demo WhatsApp
+                <ArrowUpRight className="size-[1.1rem] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              </a>
+              <a
+                href="https://github.com/FilipaoVfx/landingHackaton30x"
+                target="_blank"
+                rel="noreferrer"
+                className="group inline-flex h-13 items-center justify-center gap-2.5 rounded-full border border-guardian/40 bg-transparent px-8 text-[0.95rem] font-semibold text-guardian shadow-cta transition-all duration-300 hover:-translate-y-0.5 hover:bg-guardian/10 active:translate-y-0"
+              >
+                <Phone className="size-[1.1rem]" />
+                Demo Llamadas
                 <ArrowUpRight className="size-[1.1rem] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             </motion.div>
