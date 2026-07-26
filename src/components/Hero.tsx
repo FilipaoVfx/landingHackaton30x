@@ -73,7 +73,7 @@ export function Hero() {
                 <ArrowUpRight className="size-[1.1rem] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
               <a
-                href="https://github.com/FilipaoVfx/landingHackaton30x"
+                href="https://acmeonline.site/"
                 target="_blank"
                 rel="noreferrer"
                 className="group inline-flex h-13 items-center justify-center gap-2.5 rounded-full border border-guardian/40 bg-transparent px-8 text-[0.95rem] font-semibold text-guardian shadow-cta transition-all duration-300 hover:-translate-y-0.5 hover:bg-guardian/10 active:translate-y-0"
