@@ -36,7 +36,7 @@ export function InstallCLI() {
       <Reveal delay={0.12}>
         <div className="mt-10 flex flex-wrap items-center gap-4">
           <a
-            href="/probar.html"
+            href="/probar"
             className="group inline-flex h-13 items-center justify-center gap-2.5 rounded-full bg-guardian px-8 text-[0.95rem] font-semibold text-carbon shadow-cta transition-all duration-300 hover:-translate-y-0.5 hover:bg-guardian-deep active:translate-y-0"
           >
             Probar en el navegador
