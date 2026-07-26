@@ -66,7 +66,7 @@ export function WhatsAppPreview() {
             {step >= 0 && <Bubble from="user" stepKey="m0">Hola</Bubble>}
             {step >= 1 && (
               <Bubble from="user" stepKey="m1">
-                Viajo mucho por trabajo y no sé si estoy cubierto
+                Viajo seguido y no sé si estoy cubierto
               </Bubble>
             )}
             {step >= 2 && step < 3 && (

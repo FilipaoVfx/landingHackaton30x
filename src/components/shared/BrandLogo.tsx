@@ -9,12 +9,12 @@ const logos = {
   colsubsidio: {
     src: '/logos/colsubsidio.jpg',
     alt: 'Colsubsidio',
-    plate: 'bg-[#001a45]',
+    plate: 'bg-[#001a45] rounded-xl',
   },
   '30x': {
     src: '/logos/30x.jpg',
     alt: '30X',
-    plate: 'bg-black',
+    plate: 'bg-black rounded-lg',
   },
 } as const
 
@@ -33,7 +33,7 @@ export function BrandLogo({
   return (
     <span
       className={cn(
-        'inline-flex items-center justify-center overflow-hidden rounded-lg ring-1 ring-white/10',
+        'inline-flex items-center justify-center overflow-hidden ring-1 ring-white/10',
         logo.plate,
         className,
       )}

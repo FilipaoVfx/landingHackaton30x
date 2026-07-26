@@ -24,7 +24,7 @@ const script: Entry[] = [
   { kind: 'rec', label: 'Recomendación', value: 'Seguro de vida Colsubsidio', confidence: 96 },
   {
     kind: 'ia',
-    text: 'Con una hija que depende de ti, lo que más pesa hoy es que su vida siga igual si tú faltas. Te recomiendo el seguro de vida por $25.000 al mes. Te muestro qué cubre y lo ajustamos si quieres.',
+    text: 'Con una hija que depende de ti, lo que más pesa hoy es que su vida siga igual si tú faltas. Te recomiendo el seguro de vida desde $25.000 al mes. Te muestro qué cubre y lo ajustamos si quieres.',
   },
 ]
 
@@ -113,7 +113,7 @@ export function ConversationTimeline() {
               </p>
               <div className="mt-8 flex items-center gap-2 font-mono text-xs text-humo">
                 <User className="size-3.5" />
-                Desliza para recorrer la conversación
+                Desliza y recorre la conversación
               </div>
             </Reveal>
           </div>

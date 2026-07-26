@@ -52,12 +52,11 @@ export function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          {/* Quién está detrás, sin ruido: una placa por marca. */}
-          <div className="hidden items-center gap-2.5 sm:flex">
-            <span className="text-[0.7rem] text-humo">Para</span>
-            <BrandLogo name="colsubsidio" className="h-7 w-16" />
-            <span className="text-[0.7rem] text-humo">por</span>
-            <BrandLogo name="30x" className="size-7" />
+          <div className="hidden items-center gap-3 sm:flex">
+            <span className="text-[0.7rem] font-semibold tracking-wide text-humo">Colsubsidio</span>
+            <BrandLogo name="colsubsidio" className="h-10 w-28" />
+            <span className="text-[0.7rem] text-humo">+</span>
+            <BrandLogo name="30x" className="size-10" />
           </div>
           <button
             className="inline-flex size-9 items-center justify-center rounded-full text-ink md:hidden"
@@ -89,11 +88,11 @@ export function Navbar() {
                   {l.label}
                 </a>
               ))}
-              <div className="mt-3 flex items-center gap-2.5 px-3 pt-3 border-t border-line">
-                <span className="text-[0.7rem] text-humo">Para</span>
-                <BrandLogo name="colsubsidio" className="h-7 w-16" />
-                <span className="text-[0.7rem] text-humo">por</span>
-                <BrandLogo name="30x" className="size-7" />
+              <div className="mt-3 flex items-center gap-3 px-3 pt-3 border-t border-line">
+                <span className="text-[0.7rem] font-semibold tracking-wide text-humo">Colsubsidio</span>
+                <BrandLogo name="colsubsidio" className="h-10 w-28" />
+                <span className="text-[0.7rem] text-humo">+</span>
+                <BrandLogo name="30x" className="size-10" />
               </div>
             </div>
           </motion.div>

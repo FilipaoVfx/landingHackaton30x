@@ -41,7 +41,7 @@ export function HowItWorks() {
           Cómo funciona
         </p>
         <h2 className="mt-4 max-w-3xl text-balance text-4xl font-bold tracking-[-0.025em] text-ink sm:text-5xl">
-          Diseñamos para conversar, no para llenar formularios.
+          Diseñamos conversaciones, no formularios.
         </h2>
         <p className="mt-5 max-w-[52ch] text-lg leading-relaxed text-pizarra">
           La conversación es la interfaz más natural que existe. El sistema se

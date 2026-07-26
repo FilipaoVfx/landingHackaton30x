@@ -21,8 +21,8 @@ export function DashboardPreview() {
           No creemos en promesas. Creemos en resultados.
         </h2>
         <p className="mt-5 max-w-[52ch] text-lg leading-relaxed text-pizarra">
-          Conversaciones resueltas, confianza de cada decisión y costo real por
-          caso. La inteligencia artificial solo vale cuando se puede medir.
+          Conversaciones resueltas, confianza de cada decisión y costo real
+          medible. La inteligencia artificial solo vale cuando se puede medir.
         </p>
       </Reveal>
 
@@ -51,7 +51,7 @@ export function DashboardPreview() {
                     ¿Y eso cubre a mi hija?
                   </div>
                   <div className="ml-auto w-fit max-w-full rounded-xl rounded-br-sm bg-azul px-3.5 py-2 text-[0.82rem] text-white">
-                    Sí, totalmente. Te explico por qué…
+                    Sí, totalmente. Te cuento los detalles…
                   </div>
                   <div className="mx-auto rounded-full bg-ai-tint px-3 py-1 font-mono text-[0.65rem] text-ai-deep">
                     rules_engine → VIDA · 97%
@@ -84,7 +84,7 @@ export function DashboardPreview() {
                 <p className="mt-2 text-5xl font-bold tracking-tight text-ink">
                   <CountUp to={87} run={inView} />
                 </p>
-                <p className="mt-1 text-xs text-live">Alto interés · listo para cierre</p>
+                <p className="mt-1 text-xs text-live">Alto interés · cierre inminente</p>
               </div>
 
               {/* confidence */}

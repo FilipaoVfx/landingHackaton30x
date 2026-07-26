@@ -125,7 +125,7 @@ export function ReasoningEngine() {
           </h3>
           <p className="mt-4 max-w-[44ch] leading-relaxed text-pizarra">
             Cada fase deja evidencia con su duración real. Así se ve una
-            recomendación por dentro: observable de punta a punta, sin cajas
+            recomendación completa: observable de punta a punta, sin cajas
             negras.
           </p>
           <p className="glass mt-6 inline-flex items-center gap-2 rounded-full px-4 py-2 font-mono text-xs text-pizarra">

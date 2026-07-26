@@ -20,15 +20,15 @@ export function Footer() {
           <div className="flex flex-col gap-7 sm:flex-row sm:gap-12">
             <div>
               <p className="font-mono text-[0.68rem] tracking-[0.14em] text-humo uppercase">
-                Construido para
+                Aliado
               </p>
-              <BrandLogo name="colsubsidio" className="mt-3 h-11 w-28" />
+              <BrandLogo name="colsubsidio" className="mt-3 h-14 w-36" />
             </div>
             <div>
               <p className="font-mono text-[0.68rem] tracking-[0.14em] text-humo uppercase">
-                Por el equipo
+                Equipo
               </p>
-              <BrandLogo name="30x" className="mt-3 size-11" />
+              <BrandLogo name="30x" className="mt-3 size-14" />
             </div>
           </div>
         </div>
