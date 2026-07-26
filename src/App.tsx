@@ -6,6 +6,7 @@ import { ReasoningEngine } from '@/components/ReasoningEngine'
 import { Channels } from '@/components/Channels'
 import { Confianza } from '@/components/Confianza'
 import { DashboardPreview } from '@/components/DashboardPreview'
+import { CLIDemo } from '@/components/CLIDemo'
 import { CTA } from '@/components/CTA'
 import { Footer } from '@/components/Footer'
 
@@ -21,6 +22,7 @@ export default function App() {
         <Channels />
         <Confianza />
         <DashboardPreview />
+        <CLIDemo />
         <CTA />
       </main>
       <Footer />
