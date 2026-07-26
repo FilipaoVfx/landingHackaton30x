@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <title>Abriendo Secura CLI…</title>
+    <!--
+      Página estática a propósito: la puerta al terminal web no debe depender
+      de que el SPA compile ni de que su router siga existiendo. Resuelve el
+      destino en runtime desde secura-endpoint.json, así una rotación de túnel
+      no obliga a tocar esta página.
+    -->
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #121824;
+        color: #a3aec4;
+        font: 400 15px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+        text-align: center;
+        padding: 24px;
+      }
+      h1 { color: #ffe600; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 16px; }
+      a { color: #ffe600; }
+      .err { color: #ff5c5c; }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Secura CLI</h1>
+      <p id="msg">Abriendo el terminal…</p>
+    </div>
+    <script>
+      fetch('/secura-endpoint.json', { cache: 'no-store' })
+        .then((r) => r.json())
+        .then((d) => {
+          if (!d.web_terminal) throw new Error('sin web_terminal')
+          location.replace(d.web_terminal)
+        })
+        .catch(() => {
+          document.getElementById('msg').innerHTML =
+            '<span class="err">El terminal no está disponible ahora mismo.</span><br><br>' +
+            'Mira la demo grabada en <a href="/">teamflashackaton30x.com</a>.'
+        })
+    </script>
+  </body>
+</html>

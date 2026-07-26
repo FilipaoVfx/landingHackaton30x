@@ -7,6 +7,7 @@ import { Channels } from '@/components/Channels'
 import { Confianza } from '@/components/Confianza'
 import { DashboardPreview } from '@/components/DashboardPreview'
 import { CLIDemo } from '@/components/CLIDemo'
+import { InstallCLI } from '@/components/InstallCLI'
 import { CTA } from '@/components/CTA'
 import { Footer } from '@/components/Footer'
 
@@ -23,6 +24,7 @@ export default function App() {
         <Confianza />
         <DashboardPreview />
         <CLIDemo />
+        <InstallCLI />
         <CTA />
       </main>
       <Footer />

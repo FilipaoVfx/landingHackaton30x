@@ -1,0 +1,16 @@
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# El instalador se ejecuta con `irm ... | iex`: debe llegar como texto, no
+# como descarga binaria ni como el index.html de fallback del SPA.
+/install.ps1
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: no-cache
+
+# Rota cada vez que se reinicia un túnel; nunca debe quedar cacheado.
+/secura-endpoint.json
+  Content-Type: application/json
+  Cache-Control: no-store
