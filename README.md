@@ -1,13 +1,15 @@
-# landingHackaton30x
+# landingHackaton30x — Secura
 
-Landing page del Hackathon 30x — diseñada para desplegarse en Cloudflare Pages.
+Landing page desplegada en Cloudflare Pages.  
+Hackathon 30x — Proyecto Secura (protección inteligente vía voz y chat).
 
-## Despliegue
+## Build & deploy (Cloudflare Pages)
 
-Conectar con Cloudflare Pages:
+```
+npm install
+npm run build   # → dist/
+```
 
-1. Ir a **Cloudflare Dashboard → Pages**
-2. Crear proyecto y conectar este repo de GitHub
-3. Build command: vacío (static site)
-4. Build output directory: `/` (raíz del repo)
-5. Desplegar ✅
+En Cloudflare Pages:
+- **Build command:** `npm install && npm run build`
+- **Build output directory:** `dist`
